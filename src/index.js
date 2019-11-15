@@ -1,11 +1,17 @@
-import CONSTANTS from '../constants';
-import initialData from '../initialData';
+import CONSTANTS from './constants';
+import initialData from './initialData';
+import appReducer from './store/reducers';
+import { createStore } from 'redux';
+import {AddUser, DeleteUser } from './actions';
 
-console.log(`
-  ${initialData.data.length} USERS
-  ======
-  Constants (actions)
-  ${Object.keys(CONSTANTS)}
-`)
+const store = createStore(appReducer, initialData);
 
-export default console.log('hello')
+console.log(store.getState())
+
+store.dispatch(AddUser("Isabel", "isa@etours.ph"))
+
+console.log(store.getState())
+
+store.dispatch(DeleteUser("Isabel"))
+
+console.log(store.getState())

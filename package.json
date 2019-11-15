@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "reduxEx",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,5 +20,7 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "redux": "^4.0.4"
+  }
 }

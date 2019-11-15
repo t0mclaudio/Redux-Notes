@@ -1,5 +1,5 @@
 import CONSTANTS from '../constants';
-
+import { combineReducers } from 'redux';
 
 const users = (state=[], action) => {
   switch(action.type) {
@@ -10,8 +10,8 @@ const users = (state=[], action) => {
     case CONSTANTS.LIST:
       return state 
     default:
-      state
+      return state
   }
 }
 
-export { users };
+export default combineReducers({users})

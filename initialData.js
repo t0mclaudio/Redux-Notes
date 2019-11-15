@@ -8,6 +8,5 @@ export default {
       name: "Mik",
       email: "mik@etours.ph"
     }
-  ],
-  fetching: false
+  ]
 }

@@ -23,4 +23,9 @@
 7. Create store in index.js with reducer and initialState as arguments
 8. Create Action Creators in action.js inside store directory
 
+## Hook up to React
+1. Install React-Redux
+2. Import Provider from React-Redux to wrap around a component to interact with store
+3. MapStateToProps and Connect
+4. MapDispatchToProps
 
